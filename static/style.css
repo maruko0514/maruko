@@ -1,0 +1,61 @@
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #fffafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #ffb6c1;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+    padding: 10px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+#rabbit-container img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.bunny-container {
+    margin-top: 50px;
+}
+
+.jumping-bunny {
+    width: 200px;
+    animation: jump 1s infinite ease-in-out;
+}
+
+/* 兔子跳動動畫 */
+@keyframes jump {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>登入系統</h1>
+    <form method="post">
+        <input type="text" name="username" placeholder="使用者名稱" required><br>
+        <input type="password" name="password" placeholder="密碼" required><br>
+        <button type="submit">登入</button>
+    </form>
+    <p>還沒有帳號？<a href="{{ url_for('register') }}">前往註冊</a></p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>{% for message in messages %}<li>{{ message }}</li>{% endfor %}</ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>

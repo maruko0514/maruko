@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rabbit Zone</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>歡迎，{{ session['username'] }} 🐰</h1>
+    <p><a href="{{ url_for('logout') }}">登出</a></p>
+
+    <div class="bunny-container">
+        <img src="{{ url_for('static', filename='rabbit.jpg') }}" alt="兔子" class="jumping-bunny">
+    </div>
+</body>
+</html>
+
+
+
+
